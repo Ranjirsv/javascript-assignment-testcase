@@ -1,3 +1,5 @@
+/*globals tudentsGradeRatingArr */
+/*eslint-env node */
 //Q10. Write a program which accept average marks of the student achieved in exams and convert them into grade
 // and display ratings of each student, grades and ratings can be calculated asper the following table:
 /*
@@ -16,8 +18,28 @@ const studentDetails = [
   {name:'Ishitha',marks:95},
   {name:'Thomas',marks:68}
 ];
+let studentsGradeRatingArr = [];
+for(var i in studentDetails){
+    var mar=(studentDetails[i].marks);
+    if(mar>=0&&mar<=60){
+        studentsGradeRatingArr.push({"name":studentDetails[i].name,"Grade":'F', "Rating":'Poor'});
+       
+    }
+     if(mar>=61&&mar<=70){
+        studentsGradeRatingArr.push({"name":studentDetails[i].name,"Grade":'D', "Rating":'Fair'});
+    }
+     if(mar>=71&&mar<=80){
+        studentsGradeRatingArr.push({"name":studentDetails[i].name,"Grade":'C', "Rating":'Average'});
+    }
+     if(mar>=81&&mar<=90){
+        studentsGradeRatingArr.push({"name":studentDetails[i].name,"Grade":'B', "Rating":'Good'});
+    }
+     if(mar>=91&&mar<=100){
+        studentsGradeRatingArr.push({"name":studentDetails[i].name,"Grade":'A', "Rating":'Excellent'});
+    }
+}
 
-let studentsGradeRatingArr = []
+return(studentsGradeRatingArr);
 
 //Write your code here
 //

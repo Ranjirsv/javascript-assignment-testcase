@@ -1,6 +1,20 @@
-//Q2: Write a function that accepts numbers as input with spaces in between (such as: 1 2 3 ) and returns highest and the lowest number?
+/*eslint-env node, node*/
 
 function highestAndLowest(numbers){
-// Write your code here
+
+var num=numbers.split(" ");
+var newArray=[];
+var len=num.length;
+var i;
+var arr=[];
+for(i=0;i<len;i++){
+var a=parseInt(num[i]);
+arr.push(a);
 }
-module.exports = highestAndLowest;
+arr.sort(function(a , b){return a-b});
+newArray.push(arr[len-1]+"");
+newArray.push(arr[0]+"");
+return newArray;
+}
+
+module.exports=highestAndLowest;

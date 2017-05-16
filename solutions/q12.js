@@ -4,7 +4,15 @@ Expected output: 1
 */
 
 function char_count(str, letter){
-//Write your code here
+
+var character=letter;
+var count=0;
+for(var i=0;i<str.length;i++){
+    if(str.charAt(i)==character){
+        count++;
+    }
+}
+return count;
 }
 
 
