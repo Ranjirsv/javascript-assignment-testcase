@@ -20,26 +20,26 @@ const studentDetails = [
 ];
 let studentsGradeRatingArr = [];
 for(var i in studentDetails){
-    var mar=(studentDetails[i].marks);
+    var mar=studentDetails[i].marks;
     if(mar>=0&&mar<=60){
-        studentsGradeRatingArr.push({"name":studentDetails[i].name,"Grade":'F', "Rating":'Poor'});
+        studentsGradeRatingArr.push({"name":studentDetails[i].name,"grade":'F', "rating":'Poor'});
        
     }
      if(mar>=61&&mar<=70){
-        studentsGradeRatingArr.push({"name":studentDetails[i].name,"Grade":'D', "Rating":'Fair'});
+        studentsGradeRatingArr.push({"name":studentDetails[i].name,"grade":'D', "rating":'Fair'});
     }
      if(mar>=71&&mar<=80){
-        studentsGradeRatingArr.push({"name":studentDetails[i].name,"Grade":'C', "Rating":'Average'});
+        studentsGradeRatingArr.push({"name":studentDetails[i].name,"grade":'C', "rating":'Average'});
     }
      if(mar>=81&&mar<=90){
-        studentsGradeRatingArr.push({"name":studentDetails[i].name,"Grade":'B', "Rating":'Good'});
+        studentsGradeRatingArr.push({"name":studentDetails[i].name,"grade":'B', "rating":'Good'});
     }
      if(mar>=91&&mar<=100){
-        studentsGradeRatingArr.push({"name":studentDetails[i].name,"Grade":'A', "Rating":'Excellent'});
+        studentsGradeRatingArr.push({"name":studentDetails[i].name,"grade":'A', "rating":'Excellent'});
     }
 }
 
-return(studentsGradeRatingArr);
+
 
 //Write your code here
 //

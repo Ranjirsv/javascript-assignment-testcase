@@ -7,6 +7,7 @@ function removeDuplicates(arr){
  var rmdub = arr.filter(function(elem, index, self) {
     return index == self.indexOf(elem);
 })
+console.log(rmdub);
 return rmdub;
 }
 module.exports = removeDuplicates;

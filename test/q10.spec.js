@@ -10,7 +10,7 @@ const out = [ { name: 'David', grade: 'C', rating: 'Average' },
 let index = require('../solutions/q10');
 describe('Question 10 - Test code for correct output', function(){
   it ('Test whether the output is an object or not', function(done){
-     expect(typeof(index)).to.deep.equal("object");
+     expect(typeof index).to.deep.equal("object");
     done();
    });
 
