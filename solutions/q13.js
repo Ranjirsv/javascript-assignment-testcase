@@ -20,6 +20,6 @@ for(var i=0;i<numMax;i++){
 }
 console.log(arr);
 console.log(typeof arr);
-return arr;
+return done(arr);
 }
 module.exports = fibonacci;
